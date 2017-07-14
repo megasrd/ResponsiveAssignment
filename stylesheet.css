@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul li {
+    margin-right: 10px;
+    float: left;
+}
+
+ul li a {
+    font-family: Helvetica;
+    display: block;
+    color: white;
+    padding: 1.5vh 2vw;
+}
+
+ul li:hover {
+    background-color: #666;
+}
+
+h1 {
+    border-bottom: 1px solid #111;
+    margin: 0px 0px 20px 0px;
+}
+
+.mainBlock {
+    width: 100%;
+    height: 250px;
+    background-color: #333;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.block1 {
+    float: left;
+    display: inline-block;
+    width: 33%;
+    margin: 1px;
+    height: 200px;
+    background-color: #666;
+}
+
+.block2 {
+    float: left;
+    display: inline-block;
+    height: 200px;
+    width: 48vw;
+    margin: 1px;
+    background-color: darkolivegreen;
+}
+
+
+.block3 {
+    float: left;
+    display: inline-block;
+    width: 24vw;
+    margin: 1px;
+    height: 200px;
+    background-color: #888;
+}
+
+
+
+
+
+@media screen and (max-width:800px)  {
+    
+    h1 {
+        text-align: center;
+    }
+    
+    .mainBlock {
+        background-color: blue;
+        height: 200px;
+    }
+    
+    .block1 {
+        width: 100%;
+        height: 100px;
+        display: block;
+        float: none;
+    }
+    
+    .block2 {
+        display: block;
+        width: 99.5%;
+    }
+    
+    .block3 {
+        width: 24vw;
+    }
+}
+
+@media screen and (min-width:180px) and (max-width:611px) {
+    
+    h1 {
+        text-align: center;
+    }
+    
+    .mainBlock {
+        background-color: red;
+        height: 200px;
+    }
+    
+    .block1 {
+        width: 31vw;
+        float: left;
+    }
+    
+    .block2 {
+        display: block;
+        width: 99.5%;
+    }
+    
+    .block3 {
+        width: 23.5vw;
+    }
+}
+
+
+@media screen and (min-width:112px) and (max-width:350px) {
+    
+    .mainBlock {
+        background-color: darkviolet;
+    }
+    
+    
+    .block1 {
+        display: block;
+        float: none;
+        height: 70px;
+        width: 100%;
+    }
+    
+    .block3 {
+        display: block;
+        float: none;
+        height: 70px;
+        width: 100%;
+    }
+}
